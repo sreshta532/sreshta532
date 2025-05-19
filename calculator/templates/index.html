@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="calc-container">
+        <h2>Calculator</h2>
+        <form method="POST">
+            <input type="number" name="num1" placeholder="First Number" required>
+            <input type="number" name="num2" placeholder="Second Number" required>
+
+            <div class="buttons">
+                <button name="operation" value="add">+</button>
+                <button name="operation" value="sub">−</button>
+                <button name="operation" value="mul">×</button>
+                <button name="operation" value="div">÷</button>
+            </div>
+
+            <h3>Result: {{ result }}</h3>
+        </form>
+    </div>
+</body>
+</html>
